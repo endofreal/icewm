@@ -443,8 +443,6 @@ void TaskBar::updateLayout(unsigned &size_w, unsigned &size_h) {
     bool issue314 = taskBarAtTop;
     nw = LayoutInfo( fApplications, Here, issue314, Show, Grow, 0, 0 );
     wlist.append(nw);
-    nw = LayoutInfo( fShowDesktop, Here, !issue314, Show, Grow, 0, 0 );
-    wlist.append(nw);
     nw = LayoutInfo( fWinList, Here, !issue314, Show, Grow, 0, 0 );
     wlist.append(nw);
     nw = LayoutInfo( fObjectBar, Here, Top, Show, Grow, 4, 0 );
@@ -458,6 +456,8 @@ void TaskBar::updateLayout(unsigned &size_w, unsigned &size_h) {
     wlist.append(nw);
 
     nw = LayoutInfo( fClock, Over, Top, Same, Keep, 2, 2 );
+    wlist.append(nw);
+    nw = LayoutInfo( fShowDesktop, Here, !issue314, Show, Grow, 0, 0 );
     wlist.append(nw);
     if (taskBarShowMailboxStatus) {
         for (MailBoxControl::IterType m = fMailBoxControl->iterator(); ++m; ) {
