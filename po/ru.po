@@ -1765,7 +1765,7 @@ msgstr "Список Окон в Меню"
 
 #: src/wmtaskbar.cc:367
 msgid "Show Desktop"
-msgstr "Показать Десктоп"
+msgstr "Свернуть все окна"
 
 #: src/wmtaskbar.cc:955
 msgid "Show Taskbar"
