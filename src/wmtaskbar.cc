@@ -250,14 +250,6 @@ public:
         addItem(_("_Refresh"), -2, null, actionRefresh);
         // TRANSLATORS: This appears in a group with others items, so please make the hotkeys unique in the set: # T_ile Horizontally, Ca_scade, _Arrange, _Minimize All, _Hide All, _Undo, Arrange _Icons, _Windows, _Refresh, _About, _Logout
         addItem(_("_About"), -2, actionAbout, nullptr);
-        if (showLogoutMenu) {
-            addSeparator();
-            if (showLogoutSubMenu)
-        // TRANSLATORS: This appears in a group with others items, so please make the hotkeys unique in the set: # T_ile Horizontally, Ca_scade, _Arrange, _Minimize All, _Hide All, _Undo, Arrange _Icons, _Windows, _Refresh, _About, _Logout
-                addItem(_("_Logout..."), -2, actionLogout, logoutMenu);
-            else
-                addItem(_("_Logout..."), -2, null, actionLogout);
-        }
 
         setTitle("IceMenu");
         setClassHint("icemenu", "TaskBar");

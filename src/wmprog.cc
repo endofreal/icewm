@@ -842,7 +842,6 @@ void StartMenu::refresh() {
     }
 
     if (showLogoutMenu) {
-        addSeparator();
         if (showLogoutSubMenu)
             addItem(_("_Logout..."), -2, actionLogout, logoutMenu, "logout");
         else
