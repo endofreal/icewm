@@ -443,6 +443,8 @@ void TaskBar::updateLayout(unsigned &size_w, unsigned &size_h) {
     bool issue314 = taskBarAtTop;
     nw = LayoutInfo( fApplications, Here, issue314, Show, Grow, 0, 0 );
     wlist.append(nw);
+    nw = LayoutInfo( fShowDesktop, Over, !issue314, Show, Grow, 0, 0 );
+    wlist.append(nw);
     nw = LayoutInfo( fWinList, Here, !issue314, Show, Grow, 0, 0 );
     wlist.append(nw);
     nw = LayoutInfo( fObjectBar, Here, Top, Show, Grow, 4, 0 );
@@ -501,8 +503,6 @@ void TaskBar::updateLayout(unsigned &size_w, unsigned &size_h) {
     nw = LayoutInfo( fDesktopTray, Over, Top, Show, Keep, 1, 1 );
     wlist.append(nw);
     nw = LayoutInfo( fWindowTray, Over, Bot, Show, Grow, 1, 1 );
-    wlist.append(nw);
-    nw = LayoutInfo( fShowDesktop, Over, !issue314, Show, Grow, 0, 0 );
     wlist.append(nw);
     const int wcount = wlist.getCount();
 
