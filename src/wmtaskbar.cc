@@ -457,8 +457,6 @@ void TaskBar::updateLayout(unsigned &size_w, unsigned &size_h) {
 
     nw = LayoutInfo( fClock, Over, Top, Same, Keep, 2, 2 );
     wlist.append(nw);
-    nw = LayoutInfo( fShowDesktop, Here, !issue314, Show, Grow, 0, 0 );
-    wlist.append(nw);
     if (taskBarShowMailboxStatus) {
         for (MailBoxControl::IterType m = fMailBoxControl->iterator(); ++m; ) {
             nw = LayoutInfo( *m, Over, Top, Show, Keep, 1, 1 );
@@ -503,6 +501,8 @@ void TaskBar::updateLayout(unsigned &size_w, unsigned &size_h) {
     nw = LayoutInfo( fDesktopTray, Over, Top, Show, Keep, 1, 1 );
     wlist.append(nw);
     nw = LayoutInfo( fWindowTray, Over, Bot, Show, Grow, 1, 1 );
+    wlist.append(nw);
+	nw = LayoutInfo( fShowDesktop, Here, !issue314, Show, Grow, 0, 0 );
     wlist.append(nw);
     const int wcount = wlist.getCount();
 
