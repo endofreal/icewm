@@ -502,7 +502,7 @@ void TaskBar::updateLayout(unsigned &size_w, unsigned &size_h) {
     wlist.append(nw);
     nw = LayoutInfo( fWindowTray, Over, Bot, Show, Grow, 1, 1 );
     wlist.append(nw);
-    nw = LayoutInfo( fShowDesktop, Over, !issue314, Show, Grow, 0, 0 );
+    nw = LayoutInfo( fShowDesktop, Over, !issue314, Show, Grow, 2, 2 );
     wlist.append(nw);
     const int wcount = wlist.getCount();
 
