@@ -363,7 +363,7 @@ WindowListPopup::WindowListPopup() {
     addItem(_("MaximizeHori_z"), -2, KEY_NAME(gKeyWinMaximizeHoriz), actionMaximizeHoriz);
     addItem(_("_Fullscreen"), -2, KEY_NAME(gKeyWinFullscreen), actionFullscreen);
     addItem(_("_Show"), -2, null, actionShow);
-    addItem(_("_Hide"), -2, KEY_NAME(gKeyWinHide), actionHide);
+    # addItem(_("_Hide"), -2, KEY_NAME(gKeyWinHide), actionHide);
     addItem(_("Roll_up"), -2, KEY_NAME(gKeyWinRollup), actionRollup);
     addItem(_("_Raise"), -2, KEY_NAME(gKeyWinRaise), actionRaise);
     addItem(_("_Lower"), -2, KEY_NAME(gKeyWinLower), actionLower);
@@ -379,7 +379,7 @@ WindowListPopup::WindowListPopup() {
     addItem(_("_Arrange"), -2, KEY_NAME(gKeySysArrange), actionArrange);
     addSeparator();
     addItem(_("_Minimize All"), -2, KEY_NAME(gKeySysMinimizeAll), actionMinimizeAll);
-    addItem(_("_Hide All"), -2, KEY_NAME(gKeySysHideAll), actionHideAll);
+    # addItem(_("_Hide All"), -2, KEY_NAME(gKeySysHideAll), actionHideAll);
     addItem(_("_Undo"), -2, KEY_NAME(gKeySysUndoArrange), actionUndoArrange);
     addSeparator();
 
@@ -411,7 +411,7 @@ WindowListAllPopup::WindowListAllPopup() {
     addItem(_("Ca_scade"), -2, KEY_NAME(gKeySysCascade), actionCascade);
     addItem(_("_Arrange"), -2, KEY_NAME(gKeySysArrange), actionArrange);
     addItem(_("_Minimize All"), -2, KEY_NAME(gKeySysMinimizeAll), actionMinimizeAll);
-    addItem(_("_Hide All"), -2, KEY_NAME(gKeySysHideAll), actionHideAll);
+    # addItem(_("_Hide All"), -2, KEY_NAME(gKeySysHideAll), actionHideAll);
     addItem(_("_Undo"), -2, KEY_NAME(gKeySysUndoArrange), actionUndoArrange);
 }
 
