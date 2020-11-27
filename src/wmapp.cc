@@ -500,8 +500,8 @@ YMenu* YWMApp::getWindowMenu() {
     if (strchr(winMenuItems,'f') && allowFullscreen)
         windowMenu->addItem(_("_Fullscreen"), -2, KEY_NAME(gKeyWinFullscreen), actionFullscreen);
 
-    # if (strchr(winMenuItems, 'h'))
-    #     windowMenu->addItem(_("_Hide"),     -2, KEY_NAME(gKeyWinHide), actionHide);
+    // if (strchr(winMenuItems, 'h'))
+    //     windowMenu->addItem(_("_Hide"),     -2, KEY_NAME(gKeyWinHide), actionHide);
     if (strchr(winMenuItems, 'u'))
         windowMenu->addItem(_("Roll_up"),   -2, KEY_NAME(gKeyWinRollup), actionRollup);
     if (strchr(winMenuItems, 'a') ||
@@ -518,8 +518,8 @@ YMenu* YWMApp::getWindowMenu() {
 
     if (strchr(winMenuItems, 't') && workspaceCount > 1) {
         windowMenu->addSeparator();
-        # windowMenu->addSubmenu(_("Move _To"), -2, moveMenu);
-        # windowMenu->addItem(_("Occupy _All"), -2, KEY_NAME(gKeyWinOccupyAll), actionOccupyAllOrCurrent);
+        // windowMenu->addSubmenu(_("Move _To"), -2, moveMenu);
+        // windowMenu->addItem(_("Occupy _All"), -2, KEY_NAME(gKeyWinOccupyAll), actionOccupyAllOrCurrent);
     }
 
     /// this should probably go away, cause fullscreen will do mostly the same thing
@@ -537,10 +537,10 @@ YMenu* YWMApp::getWindowMenu() {
         windowMenu->addItem(_("_Close"), -2, KEY_NAME(gKeyWinClose), actionClose);
     if (strchr(winMenuItems, 'k'))
         windowMenu->addItem(_("_Kill Client"), -2, null, actionKill);
-    # if (strchr(winMenuItems, 'w')) {
-    #     windowMenu->addSeparator();
-    #     windowMenu->addItem(_("_Window list"), -2, KEY_NAME(gKeySysWindowList), actionWindowList);
-    # }
+    // if (strchr(winMenuItems, 'w')) {
+    //     windowMenu->addSeparator();
+    //     windowMenu->addItem(_("_Window list"), -2, KEY_NAME(gKeySysWindowList), actionWindowList);
+    // }
 
     return windowMenu;
 }
